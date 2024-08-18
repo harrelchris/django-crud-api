@@ -1,0 +1,11 @@
+{% extends "rest_framework/base.html" %}
+{% load static %}
+
+{#{% block bootstrap_theme %}#}
+{#    <link rel="stylesheet" href="{% static 'css/cosmo.min.css' %}" type="text/css">#}
+{#{% endblock %}#}
+
+{% block style %}
+  {{ block.super }}
+    <link rel="icon" href="{% static 'img/favicon.ico' %}">
+{% endblock %}
