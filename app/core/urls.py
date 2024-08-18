@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
 
 admin.site.index_title = "Site administration"
 admin.site.name = "Django Admin"
@@ -8,4 +8,5 @@ admin.site.site_title = "Django site admin"
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("api-auth/", include("rest_framework.urls")),
 ]
