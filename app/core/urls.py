@@ -8,5 +8,6 @@ admin.site.site_title = "Django site admin"
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api-auth/", include("rest_framework.urls")),
+    path("api-auth/", include("rest_framework.urls"), name="rest_framework"),
+    path("", include("items.urls"), name="items"),
 ]
