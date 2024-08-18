@@ -1,10 +1,8 @@
 if (!(Test-Path .venv)) {
     python -m venv .venv
-    .venv\Scripts\activate
-} else {
-    .venv\Scripts\activate
 }
 
+.venv\Scripts\activate
 python -m pip install --upgrade pip
 pip install ruff
 pip install -r requirements.txt
