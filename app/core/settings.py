@@ -30,7 +30,7 @@ DJANGO_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
-    "debug_toolbar",
+
 ]
 
 LOCAL_APPS = [
