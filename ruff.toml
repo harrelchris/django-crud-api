@@ -1,5 +1,7 @@
 extend-exclude = [
     "migrations",
+    "static",
+    "templates",
 ]
 include = [
     "app/*",
