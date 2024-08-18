@@ -2,7 +2,7 @@ extend-exclude = [
     "migrations",
 ]
 include = [
-    "app",
+    "app/*",
     "manage.py",
 ]
 line-length = 120
