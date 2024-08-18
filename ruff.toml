@@ -1,0 +1,16 @@
+extend-exclude = [
+    "migrations",
+]
+include = [
+    "app",
+    "manage.py",
+]
+line-length = 120
+src = [
+    "app",
+]
+
+[lint]
+select = [
+    "I",
+]
