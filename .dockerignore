@@ -1,0 +1,15 @@
+.idea/
+.local/
+.static/
+.venv/
+__pycache__/
+scripts/
+
+.editorconfig
+.env
+.gitignore
+db.sqlite3
+Dockerfile
+example.env
+README.md
+ruff.toml
