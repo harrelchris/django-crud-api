@@ -18,6 +18,7 @@
 
 ## TODO
 
+- Static Files
 - Authentication
 - User Creation
 - Testing
@@ -29,3 +30,46 @@
 - CORS
 - Deployment
     - Docker
+    - NGINX
+    - Multiple Instances
+    - Postgres DB - use neon?
+
+## Docker
+
+### Build
+
+```shell
+docker build -t api .
+```
+
+### Run
+
+```shell
+docker run --detach --publish 8000:8000 --name api --env SECRET_KEY=secret --env DATABASE_URL=sqlite:///db.sqlite3 api
+```
+
+## Exec
+
+### Shell
+
+```shell
+docker exec -it api bash
+```
+
+### Migrate
+
+```shell
+docker exec -it api python manage.py migrate
+```
+
+### Collect Static
+
+```shell
+docker exec -it api python manage.py collectstatic --noinput
+```
+
+### Create Super User
+
+```shell
+docker exec -it api python manage.py createsuperuser --username user --email user@email.com
+```
